@@ -1,10 +1,9 @@
 import java.util.ArrayList;
 
-public class Livros {
+public class Book {
     private ArrayList<String> title; 
 
-    public Livros(ArrayList<String> title){
+    public Book(ArrayList<String> title){
         this.title = title;
     }
-
 }
