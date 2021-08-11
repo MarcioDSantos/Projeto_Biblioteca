@@ -1,15 +1,15 @@
 import java.util.ArrayList;
 
 public class Friend {
-    private String friendCode;
-    private String name;
-    private String phone;
-    private String birthDay; // atravez da data de nascimento mostrar a idade
-    private String address;
-    private ArrayList<String> Arrayname; 
-    private String email;
-    private String cpf;
-    private String sex;
+    protected String friendCode;
+    protected String name;
+    protected String phone;
+    protected String birthDay; // atravez da data de nascimento mostrar a idade
+    protected String address;
+    protected String email;
+    protected String cpf;
+    protected String sex;
+    protected ArrayList<String> Arrayname;
 
     public Friend(String friendCode, String name, String phone, String birthDay, String address, String email,
             String cpf, String sex) {
@@ -27,69 +27,7 @@ public class Friend {
         this.Arrayname = Arrayname;
     }
 
-    public String getFriendCode() {
-        return friendCode;
-    }
-
-    public void setFriendCode(String friendCode) {
-        this.friendCode = friendCode;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getBirthDay() {
-        return birthDay;
-    }
-
-    public void setBirthDay(String birthDay) {
-        this.birthDay = birthDay;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
+    
 
     
     
