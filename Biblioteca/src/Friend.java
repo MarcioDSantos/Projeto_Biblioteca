@@ -1,5 +1,7 @@
+//import java.util.ArrayList;
+
 public class Friend {
-    protected ArrayList <String> friend = new ArrayList<>();
+    //protected ArrayList <String> friend = new ArrayList<>();
     protected String friendCode;
     protected String name;
     protected String phone;
@@ -8,12 +10,7 @@ public class Friend {
     protected String email;
     protected String cpf;
     protected String sex;
-<<<<<<< HEAD
 
-=======
-    
-    
->>>>>>> f45d39317cc9dc6eca572fac10010cb351654ec9
 
     public Friend(String friendCode, String name, String phone, String birthDay, String address, String email,
             String cpf, String sex) {
@@ -25,6 +22,7 @@ public class Friend {
         this.email = email;
         this.cpf = cpf;
         this.sex = sex;
+
         }
 
     public Friend() {
