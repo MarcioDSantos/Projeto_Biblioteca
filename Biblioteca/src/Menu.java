@@ -10,15 +10,16 @@ public class Menu {
         System.out.println("Opções \n 1. Cadastrar Livro \n 2.Cadastrar Amigo \n 3. Emprestar Livro \n 4. Devolução \n 5. Sair");
         option = input.nextInt();
         System.out.print("Opção escolhida : ");
-        BookRegister bookRegister = new BookRegister("teste");
+        FriendRegister friendRegister = new FriendRegister();
 
         switch (option){
             case 1 :
             System.out.println("1. Cadastrar Livro");
-            System.out.println(bookRegister.getCode());
             break;
             case 2 : 
             System.out.println("2.Cadastrar Amigo");
+            friendRegister.Register(friendCode, name, phone, birthDay, address, email, cpf, sex);
+            System.out.println(friendRegister.getName());
             break;
             case 3 :
             System.out.println("3. Emprestar Livro");

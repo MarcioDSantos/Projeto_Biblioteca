@@ -1,47 +1,62 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class FriendRegister extends Friend {
 
-    public FriendRegister(String friendCode, String name, String phone, String birthDay, String address, String email,
-            String cpf, String sex) {
-        super(friendCode, name, phone, birthDay, address, email, cpf, sex);
+    Scanner input = new Scanner(System.in);
+    
+    public FriendRegister() {
+        super();
     }
 
-    public void setFriendCode(String friendCode) {
-        super.friendCode = friendCode;
+    private ArrayList<String> Arrayname;
+
+    public void ArrayFriend(ArrayList<String> Arrayname){
+        this.Arrayname = Arrayname;
     }
 
-    public void setName(String name) {
-        super.name = name;
-    }
+    public void Register(String friendCode, String name, String phone, String birthDay, String address, String email,
+    String cpf, String sex){
+        
+        System.out.print("Codigo do novo amigo: ");
+        friendCode = input.nextLine();
+        setFriendCode(friendCode); 
+        input.nextLine(); 
 
-    public void setPhone(String phone) {
-        super.phone = phone;
-    }
+        System.out.print("Nome do novo amigo: ");
+        name = input.nextLine();
+        setName(name);
+        input.nextLine(); 
 
-    public void setBirthDay(String birthDay) {
-        super.birthDay = birthDay;
-    }
+        System.out.print("Telefone do novo amigo: ");
+        phone = input.nextLine();
+        setPhone(phone);
+        input.nextLine(); 
 
-    public void setAddress(String address) {
-        super.address = address;
-    }
+        System.out.print("Data de nascimento do novo amigo: ");
+        phone = input.nextLine();
+        setBirthDay(birthDay);
+        input.nextLine();
 
-    public void setEmail(String email) {
-        super.email = email;
-    }
+        System.out.print("Endereço do novo amigo: ");
+        phone = input.nextLine();
+        setAddress(address);
+        input.nextLine();
 
-    public void setCpf(String cpf) {
-        super.cpf = cpf;
-    }
+        System.out.print("Endereço do novo amigo: ");
+        phone = input.nextLine();
+        setEmail(email);
+        input.nextLine();
 
-    public void setSex(String sex) {
-        super.sex = sex;
-    } 
+        System.out.print("CPF do novo amigo: ");
+        phone = input.nextLine();
+        setCpf(cpf);
+        input.nextLine();
 
-    public void Register(String friendCode, String name){
-
-     setFriendCode(friendCode);  
-     setName(name);
-     
+        System.out.print("Genero do novo amigo: ");
+        phone = input.nextLine();
+        setSex(sex);
+        input.nextLine();
     }
    
 }

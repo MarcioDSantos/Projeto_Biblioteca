@@ -1,6 +1,5 @@
-import java.util.ArrayList;
-
 public class Friend {
+    protected ArrayList <String> friend = new ArrayList<>();
     protected String friendCode;
     protected String name;
     protected String phone;
@@ -9,8 +8,12 @@ public class Friend {
     protected String email;
     protected String cpf;
     protected String sex;
-    protected ArrayList<String> Arrayname;
-    public Object register;
+<<<<<<< HEAD
+
+=======
+    
+    
+>>>>>>> f45d39317cc9dc6eca572fac10010cb351654ec9
 
     public Friend(String friendCode, String name, String phone, String birthDay, String address, String email,
             String cpf, String sex) {
@@ -22,17 +25,18 @@ public class Friend {
         this.email = email;
         this.cpf = cpf;
         this.sex = sex;
-    }
+        }
 
-    public Friend(ArrayList<String> Arrayname){
-        this.Arrayname = Arrayname;
+    public Friend() {
     }
 
     public String getFriendCode() {
+
         return this.friendCode;
     }
 
     public String getName() {
+      
         return this.name;
     }
     
@@ -59,5 +63,40 @@ public class Friend {
     public String getSex() {
         return this.sex;
     }
+    public void friend(){
+        
+    }
+
+    public void setFriendCode(String friendCode) {
+        this.friendCode = friendCode;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setBirthDay(String birthDay) {
+        this.birthDay = birthDay;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    } 
 
 }
