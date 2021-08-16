@@ -1,6 +1,5 @@
 import java.util.Scanner;
-import java.util.jar.Attributes.Name;
-import java.util.Scanner;
+
 public class Menu {
     private int option;
 
@@ -17,8 +16,8 @@ public class Menu {
             System.out.println("1. Cadastrar Livro");
             break;
             case 2 : 
-            System.out.println("2.Cadastrar Amigo");
-            friendRegister.Register(friendCode, name, phone, birthDay, address, email, cpf, sex);
+            System.out.println("2. Cadastrar Amigo");
+            friendRegister.Register();
             System.out.println(friendRegister.getName());
             break;
             case 3 :

@@ -15,47 +15,46 @@ public class FriendRegister extends Friend {
         this.Arrayname = Arrayname;
     }
 
-    public void Register(String friendCode, String name, String phone, String birthDay, String address, String email,
-    String cpf, String sex){
+    public void Register(){
         
         System.out.print("Codigo do novo amigo: ");
-        friendCode = input.nextLine();
-        setFriendCode(friendCode); 
+        super.friendCode = input.nextLine();
+        setFriendCode(super.friendCode); 
         input.nextLine(); 
 
         System.out.print("Nome do novo amigo: ");
-        name = input.nextLine();
-        setName(name);
+        super.name = input.nextLine();
+        setName(super.name);
         input.nextLine(); 
 
         System.out.print("Telefone do novo amigo: ");
-        phone = input.nextLine();
-        setPhone(phone);
+        super.phone = input.nextLine();
+        setPhone(super.phone);
         input.nextLine(); 
 
         System.out.print("Data de nascimento do novo amigo: ");
-        phone = input.nextLine();
-        setBirthDay(birthDay);
+        super.birthDay = input.nextLine();
+        setBirthDay(super.birthDay);
         input.nextLine();
 
         System.out.print("Endereço do novo amigo: ");
-        phone = input.nextLine();
-        setAddress(address);
+        super.address = input.nextLine();
+        setAddress(super.address);
         input.nextLine();
 
-        System.out.print("Endereço do novo amigo: ");
-        phone = input.nextLine();
-        setEmail(email);
+        System.out.print("E-mail do novo amigo: ");
+        super.email = input.nextLine();
+        setEmail(super.email);
         input.nextLine();
 
         System.out.print("CPF do novo amigo: ");
-        phone = input.nextLine();
-        setCpf(cpf);
+        super.cpf = input.nextLine();
+        setCpf(super.cpf);
         input.nextLine();
 
         System.out.print("Genero do novo amigo: ");
-        phone = input.nextLine();
-        setSex(sex);
+        super.sex = input.nextLine();
+        setSex(super.sex);
         input.nextLine();
     }
    
