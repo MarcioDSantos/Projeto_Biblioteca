@@ -56,6 +56,5 @@ public class FriendRegister extends Friend {
         super.sex = input.nextLine();
         setSex(super.sex);
         input.nextLine();
-    }
-   
+    }  
 }
