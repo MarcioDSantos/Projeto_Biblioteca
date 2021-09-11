@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class FriendRegister extends Friend {
 
@@ -56,5 +58,29 @@ public class FriendRegister extends Friend {
         super.sex = input.nextLine();
         setSex(super.sex);
         input.nextLine();
-    }  
+
+        // Execute the write method
+        write();
+    }
+    
+    // Save the registration data in a txt file
+    public void write(){
+
+        try{
+            FileWriter fw;
+            fw = new FileWriter("arq.txt", true);
+            fw.write("\n"+super.friendCode);
+            fw.write("\n"+ super.name);
+            fw.write("\n"+ super.phone);
+            fw.write("\n"+ super.birthDay);
+            fw.write("\n"+ super.address);
+            fw.write("\n"+ super.email);
+            fw.write("\n"+ super.cpf);
+            fw.write("\n"+ super.sex);
+            fw.close();
+        } catch (IOException e) {
+            System.out.println("Error" + e.getMessage());
+            e.printStackTrace();
+        }
+    }
 }

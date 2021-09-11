@@ -30,7 +30,7 @@ public class Menu {
             System.out.println("5. Sair");
             break;
             default :
-            System.out.println("Opção inválida");
+            System.out.println(" Opção inválida");
         }
     }
 }
