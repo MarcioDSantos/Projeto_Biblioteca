@@ -18,7 +18,6 @@ public class Menu {
             case 2 : 
             System.out.println("2. Cadastrar Amigo");
             friendRegister.Register();
-            System.out.println(friendRegister.getName());
             break;
             case 3 :
             System.out.println("3. Emprestar Livro");

@@ -59,8 +59,23 @@ public class FriendRegister extends Friend {
         setSex(super.sex);
         input.nextLine();
 
+        RegisterForm();
+
         // Execute the write method
         write();
+    }
+
+    public void RegisterForm(){
+        System.out.println("------------------------------------------------------");
+        System.out.println("   O registor relizado foi de 1 amigo:");
+        System.out.println("         Código: " + super.friendCode);
+        System.out.println("         Nome: " + super.name);
+        System.out.println("         Telefone: " + super.phone);
+        System.out.println("         Data de nasciment: " + super.birthDay);
+        System.out.println("         Endereço: " + super.address);
+        System.out.println("         E-mail: " + super.email);
+        System.out.println("         CPF: " + super.cpf);
+        System.out.println("         Sexo: " + super.sex);
     }
     
     // Save the registration data in a txt file
