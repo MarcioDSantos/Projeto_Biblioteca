@@ -59,6 +59,7 @@ public class FriendRegister extends Friend {
         setSex(super.sex);
         input.nextLine();
 
+        
         RegisterForm();
 
         // Execute the write method
